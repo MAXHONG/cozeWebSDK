@@ -11,30 +11,16 @@
       Telegram.WebApp.onEvent("themeChanged", setThemeClass);
       setThemeClass();
     </script>
-    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.2/libs/oversea/index.js"></script>
-  </head>
-  <body>
-    <script>
-      Telegram.WebApp.ready();
-      let tg = window.Telegram.WebApp;
-      tg.expand();
-      // const client = new CozeWebSDK.WebChatClient({
-      //   config: {
-      //     bot_id: "7365929209094569990", //ID of your bot on coze.com
-      //   },
-      //   componentProps: {
-      //     title: "Coze",
-      //   },
-      // });
-      // client.destroy();
-      new CozeWebSDK.WebChatClient({
-        config: {
-          bot_id: "7381544983607787537", //ID of your bot on coze.com
-        },
-        componentProps: {
-          title: "Coze",
-        },
-      });
-    </script>
+          <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.0.0-beta.4/libs/oversea/index.js"></script>
+      <script>
+          new CozeWebSDK.WebChatClient({
+            config: {
+              bot_id: '7435919517274554375',
+            },
+            componentProps: {
+              title: 'Coze',
+            },
+          });
+      </script>
   </body>
 </html>
