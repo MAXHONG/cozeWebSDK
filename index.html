@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coze Chat</title> <!-- 添加标题 -->
+    
     <script src="https://tg.dev/js/telegram-web-app.js"></script>
     <script>
       function setThemeClass() {
@@ -11,16 +13,22 @@
       Telegram.WebApp.onEvent("themeChanged", setThemeClass);
       setThemeClass();
     </script>
-          <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.0.0-beta.4/libs/oversea/index.js"></script>
-      <script>
-          new CozeWebSDK.WebChatClient({
-            config: {
-              bot_id: '7435919517274554375',
-            },
-            componentProps: {
-              title: 'Coze',
-            },
-          });
-      </script>
+
+    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.0.0-beta.4/libs/oversea/index.js"></script>
+    <script>
+      // 初始化 CozeWebSDK
+      new CozeWebSDK.WebChatClient({
+        config: {
+          bot_id: '7435919517274554375',
+        },
+        componentProps: {
+          title: 'Coze',
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to Coze Chat</h1>
+    <!-- 可以根据需要添加更多内容 -->
   </body>
 </html>
